@@ -1,0 +1,73 @@
+:root{
+    --tamañotitulo: 32px;
+    --tamañosubtitulo: 16px;
+    --tamañoparrafo: 12px;
+    --color1: rgb(251, 206, 123);
+    --color2: rgb(226, 19, 226);
+    --color3: rgb(232, 131, 148);
+    --tamtitulo: 24px;
+    --tamsubtitulo: 12px;
+    --tamparrafo: 8px;
+    --fuente: verdana;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px auto;
+    grid-template-areas: "cuadro1    cuadro2"
+                         "cuadro3   cuadro3";
+    font-family: var(--fuente);
+}
+
+.cuadro-1{
+    grid-area: cuadro1;
+    padding: 0 30px;
+    display: block;
+    background: var(--color1);  
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h1.title1{
+    font-size: var(--tamañotitulo);
+}
+
+h2.sub1{
+    font-size: var(--tamañosubtitulo);
+}
+
+p.p1{
+    font-size: var(--tamañoparrafo);
+}
+
+.cuadro-2{
+    grid-area: cuadro2;
+    padding: 0 30px;
+    display: block;
+    background: var(--color2);
+    margin-bottom: 20px;
+}
+
+.cuadro-3{
+    grid-area: cuadro3;
+    padding: 0 30px;
+    display: block;
+    background: var(--color3);
+    margin-bottom: 20px;
+}
+
+.cuadro-3 h1{
+    font-size: var(--tamtitulo);
+}
+
+.cuadro-3 h2{
+    font-size: var(--tamsubtitulo);
+}
+
+.cuadro-3 p{
+    font-size: var(--tamparrafo);
+}
